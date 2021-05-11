@@ -23,11 +23,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.neural_network import MLPClassifier
 import matplotlib.pyplot as plt
+print('Question 1 answer')
 
 #Load Data
 Path = "data.csv"
 names = ['id', 'diagnosis', 'radius_mean', 'texture_mean', 'perimeter_mean', 'area_mean',
          'smoothness_mean', 'compactness_mean', 'concavity_mean', 'concavity_points']
+
 
 #!!!!!names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 
@@ -37,6 +39,8 @@ array = rawdata.values
 nrow, ncol = rawdata.shape
 predictors = array[:,0:8]
 target = array[:, 8]
+
+print(rawdata) #test to print rawdata
 
 # The funcation to see some of the attributes of Neural Network
 def NN_properties(model):
@@ -92,9 +96,9 @@ def get_accuracy(target_train, target_test,
 
     return accuracy_score(target_test, predictions)
 
-    # train-test split
-    pred_train, pred_test, tar_train, tar_test = train_test_split(predictors, target, test_size=.3,
-                         random_state=4)
+    # # train-test split
+    # pred_train, pred_test, tar_train, tar_test = train_test_split(predictors, target, test_size=.3,
+    #                      random_state=4)
 
     # Calling get_accuracy function which also invoke other functions NN_properties, make_plots, make_plots_all
     print("Accuracy score: %.2f" % get_accuracy(tar_train,tar_test, pred_test, pred_train))
