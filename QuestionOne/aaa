@@ -1,0 +1,4 @@
+'id', 'radius_mean', 'texture_mean', 'perimeter_mean', 'area_mean','smoothness_mean', 'compactness_mean', 'concavity_mean',
+          'smoothness_mean', 'compactness_mean', 'concavity_mean', 'concavity points_ mean', 'symmetry_mean', 'fractal_dimension_mean', 'radius_se', 'texture_se', 'perimeter_se',
+          'area_se', 'smoothness_se', 'compactness_se', 'concavity_se', 'concave points_se', 'symmetry_se', 'fractal_dimension_se', 'radius_worst', 'area_worst', 'smoothness_worst',
+          'campactness_worst','concavity_worst', 'concave points_worst', 'symmetry_worst', 'fractal dimension_worst','diagnosis',
